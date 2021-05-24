@@ -1,0 +1,87 @@
+.contact {
+  background: rgba(18, 22, 31, 255);
+  position: relative;
+  height: 20vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: white;
+}
+.contact a:hover {
+  animation: 2s pop;
+}
+.arrow2 {
+  position: absolute;
+  top: 46%;
+  transform: translate(+68%, -40%);
+}
+.arrow2-l {
+  left: 30%;
+  transform: rotate(-90deg);
+}
+.arrow2-r {
+  right: 30%;
+  transform: rotate(90deg);
+}
+.arrow2 span {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-bottom: 2px solid #fff;
+  border-right: 2px solid #fff;
+
+  margin: -10px;
+  animation: arrow 2s infinite;
+}
+
+.arrow2 span:nth-child(2) {
+  animation-delay: -0.2s;
+}
+.arrow2 span:nth-child(3) {
+  animation-delay: -0.4s;
+}
+@keyframes arrow2 {
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(-20px, -20px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) translate(20px, 20px);
+  }
+}
+
+@keyframes pop {
+  from {
+    font-size: 2rem;
+  }
+  to {
+    font-size: 2.4vw;
+    font-weight: 800;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .arrow2-r {
+    right: 20%;
+  }
+  .arrow2-l {
+    left: 20%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact a {
+    font-size: 1rem;
+  }
+  .arrow2 {
+    display: none;
+  }
+}

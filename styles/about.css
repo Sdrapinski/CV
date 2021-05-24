@@ -1,0 +1,75 @@
+.about {
+  position: relative;
+  background: rgba(18, 22, 31, 255);
+
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+.photo {
+  height: 100vh;
+  float: left;
+  width: 50%;
+  position: relative;
+  z-index: 2;
+}
+.photo img {
+  height: 60%;
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  border-radius: 10%;
+  box-shadow: 1px white;
+}
+.opis {
+  float: left;
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 350%;
+}
+.opis span {
+  color: white;
+  font-size: 2vw;
+  z-index: 2;
+}
+
+@media screen and (max-width: 1000px) {
+  .photo {
+    width: 100%;
+  }
+  .photo img {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .opis {
+    width: 100%;
+  }
+  .opis span {
+    top: 50%;
+    width: 50%;
+  }
+  .about {
+    height: 200vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .opis span {
+    height: 100vh;
+    font-size: 3vw;
+  }
+  .about {
+    height: 150vh;
+  }
+  .about img {
+    height: 50%;
+  }
+  .photo {
+    height: 50%;
+    margin-bottom: -3%;
+  }
+}
