@@ -53,9 +53,10 @@
     flex-direction: column;
   }
   .projects div svg {
-    height: 100px;
+    height: 200px;
   }
   .projects div {
-    height: 100px;
+    height: 200px;
+    margin-bottom:20px; 
   }
 }
