@@ -35,6 +35,9 @@
   font-size: 2vw;
   z-index: 2;
 }
+.home {
+  position: relative;
+}
 
 @media screen and (max-width: 1000px) {
   .photo {
@@ -61,7 +64,8 @@
   .opis span {
     height: 100vh;
     font-size: 3vw;
-     line-height: 150%;
+
+    line-height: 150%;
   }
   .about {
     height: 150vh;
