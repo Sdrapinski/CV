@@ -6,6 +6,9 @@
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
 }
+body {
+  overflow-x: hidden;
+}
 .home {
   background-image: url("../images/back2.png");
   height: 100vh;
