@@ -9,7 +9,7 @@
 .photo {
   height: 100vh;
   float: left;
-  width: 50%;
+  width: 40%;
   position: relative;
   z-index: 2;
 }
@@ -23,7 +23,7 @@
 }
 .opis {
   float: left;
-  width: 50%;
+  width: 60%;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -61,6 +61,7 @@
   .opis span {
     height: 100vh;
     font-size: 3vw;
+     line-height: 150%;
   }
   .about {
     height: 150vh;
