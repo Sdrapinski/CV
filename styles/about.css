@@ -63,7 +63,7 @@
 @media screen and (max-width: 768px) {
   .opis span {
     height: 100vh;
-    font-size: 4.5vw;
+    font-size: 20px;
 
     line-height: 150%;
   }
